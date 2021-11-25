@@ -291,17 +291,17 @@
 //
 // Fans
 //
-#define FAN_PIN                             PC8   // Fan0
-#define FAN1_PIN                            PE5   // Fan1
+#define FAN_PIN                             PC8   // Fan0 - Part cooling fan
+#define FAN1_PIN                            PE5   // Fan1 - Heatsink cooling fan
 
 #ifndef E0_AUTO_FAN_PIN
   #define E0_AUTO_FAN_PIN               FAN1_PIN
 #endif
 
 #if !defined(CONTROLLER_FAN_PIN) && ENABLED(USE_CONTROLLER_FAN) && HOTENDS < 2
-  #define CONTROLLER_FAN_PIN                PE6   // Fan2
+  #define CONTROLLER_FAN_PIN                PE6   // Fan2 - Board fan
 #else
-  #define FAN2_PIN                          PE6   // Fan2
+  #define FAN2_PIN                          PE6   // Fan2 - Board fan
 #endif
 
 //
