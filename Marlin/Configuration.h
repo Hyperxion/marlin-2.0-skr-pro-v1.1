@@ -606,9 +606,9 @@
     #define DEFAULT_Ki_LIST {   1.08,   1.08 }
     #define DEFAULT_Kd_LIST { 114.00, 114.00 }
   #else
-    #define DEFAULT_Kp  11.73
-    #define DEFAULT_Ki   0.62
-    #define DEFAULT_Kd  55.39
+    #define DEFAULT_Kp 11.81
+    #define DEFAULT_Ki 0.63
+    #define DEFAULT_Kd 55.27
   #endif
 #endif // PIDTEMP
 
@@ -629,7 +629,7 @@
  * heater. If your configuration is significantly different than this and you don't understand
  * the issues involved, don't use bed PID until someone else verifies that your hardware works.
  */
-//#define PIDTEMPBED
+#define PIDTEMPBED
 
 //#define BED_LIMIT_SWITCHING
 
